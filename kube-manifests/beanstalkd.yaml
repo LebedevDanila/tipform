@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beanstalkd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beanstalkd
+  template:
+    metadata:
+      labels:
+        app: beanstalkd
+    spec:
+      containers:
+        - name: beanstalkd
+          image: schickling/beanstalkd:latest
+          ports:
+            - containerPort: 11300
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: beanstalkd
+spec:
+  type: ClusterIP
+  selector:
+    app: beanstalkd
+  ports:
+    - name: beanstalkd
+      port: 11300
+      targetPort: 11300

@@ -1,0 +1,79 @@
+$img_this: '/static/img/blocks/account/';
+
+.account {
+    background: #FFF6F4;
+    border-radius: 100px;
+    padding: 18px 30px 18px 20px;
+    transition: 0.3s all ease;
+    position: relative;
+
+    &._open {
+        display: flex;
+    }
+
+    &._close {
+        display: none;
+    }
+
+    &:focus{
+        outline:none;
+    }
+
+    &:hover {
+        background: linear-gradient(118.58deg, #FFF7E1 19.27%, #FFE3EC 80.13%);
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__content {
+        max-width: 260px;
+    }
+
+    &__username {
+        font-weight: 600;
+        line-height: 20px;
+        color: #2D2A2A;
+    }
+
+    &__followers {
+        font-size: 12px;
+        color: #8B8B8B;
+        line-height: 20px;
+
+        span {
+            color: #CD3870;
+            font-weight: 600;
+        }
+    }
+
+    &__add, &__delete {
+        position: absolute;
+        top: 33px;
+        z-index: 3;
+    }
+
+    &__add {
+        right: 18px;
+
+        &._active {
+            fill: #CD3870;
+            pointer-events: none;
+        }
+    }
+
+    &__delete {
+        right: 16px;
+    }
+}

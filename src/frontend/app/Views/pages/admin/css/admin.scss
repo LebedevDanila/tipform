@@ -1,0 +1,250 @@
+$img_this: '/static/img/pages/admin/';
+
+.admin {
+    padding: 90px 0;
+
+    &__btn {
+        width: 250px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        color: #fff;
+        font-weight: 500;
+        background: #4373f1;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s all ease;
+
+        &:hover {
+            background: #003ee1;
+        }
+
+        &._edit {
+            background: green;
+        }
+    }
+
+
+    &__popup {
+        background: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        display: none;
+
+        &-close {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: -23px;
+            top: -23px;
+            cursor: pointer;
+        }
+
+        &-content {
+            background: #fff;
+            border-radius: 5px;
+            width: 375px;
+            height: 225px;
+            max-width: 100%;
+            flex-direction: column;
+            margin: 80px auto 0 auto;
+            position: relative;
+        }
+
+        &-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        &-button {
+            width: 135px;
+            height: 40px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 700;
+            transition: 0.3s all ease;
+
+            &._yes {
+                margin-right: 20px;
+                background: #4373f1;
+
+                &:hover {
+                    background: #0048ff;
+                }
+            }
+
+            &._no {
+                background: #607d8b;
+
+                &:hover {
+                    background: #475d68;
+                }
+            }
+        }
+
+        &-field {
+            margin-bottom: 17px;
+        }
+
+        &-label {
+            font-weight: 500;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        &-input {
+            width: 100%;
+            height: 40px;
+            padding-left: 17px;
+            font-size: 15px;
+            border-radius: 2px;
+            border: 1px solid #d1d1d1;
+
+            &::placeholder {
+                color: #607d8b;
+            }
+        }
+
+        &-submit {
+            width: 100%;
+            height: 45px;
+            border: none;
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__table {
+        margin: 20px auto 40px auto;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid #d1d1d1;
+        width: 100%;
+        max-width: 1400px;
+        padding: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        tr {
+            border: 1px solid #d1d1d1;
+            padding: 5px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            color: #fff;
+            background-color: #d62976;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        td {
+            border-right: 1px solid #d1d1d1;
+
+            &.action {
+                button, a {
+                    width: 100px;
+                    color: #fff;
+                    height: 30px;
+                    margin: 0 auto;
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    transition: 0.3s all ease;
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.status {
+                        cursor: default;
+
+                        &._active {
+                            background: #009688;
+                        }
+
+                        &._close {
+                            background: #f44336;
+                        }
+                    }
+
+                    &._delete {
+                        background: #3b4c73;
+
+                        &:hover {
+                            background: #44474e;
+                        }
+                    }
+
+                    &._disable {
+                        background: #f44336;
+
+                        &:hover {
+                            background: #c1352a;
+                        }
+                    }
+
+                    &._enable {
+                        background: #4caf50;
+
+                        &:hover {
+                            background: #1e8823;
+                        }
+                    }
+
+                    &._logs {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    &__tabs {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 185px 0;
+    }
+
+    &__tab {
+        width: 50%;
+        color: #fff;
+        background: #0045ff;
+        font-size: 18px;
+        font-weight: 600;
+        height: 45px;
+        transition: 0.3s all ease;
+
+        &:hover {
+            background: #0900bb;
+        }
+
+        &:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+
+        &:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}

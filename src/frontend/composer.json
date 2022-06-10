@@ -1,0 +1,57 @@
+{
+	"name": "codeigniter4/codeigniter4",
+	"type": "project",
+	"description": "The CodeIgniter framework v4",
+	"homepage": "https://codeigniter.com",
+	"license": "MIT",
+	"composer-runtime-api": "^2.0",
+	"require": {
+		"php": ">=7.2",
+		"ext-curl": "*",
+		"ext-intl": "*",
+		"ext-json": "*",
+		"ext-mbstring": "*",
+		"slim/slim": "4.*",
+		"slim/psr7": "1.5",
+		"kint-php/kint": "^3.3",
+		"laminas/laminas-escaper": "^2.6",
+		"psr/log": "^1.1",
+		"predis/predis": "^1.1.6",
+		"php-http/curl-client": "^2.1.0",
+		"sentry/sdk": "^3.1.0",
+		"wapmorgan/morphos": "^3.2",
+		"thepixeldeveloper/sitemap": "=4.5",
+		"peppeocchi/php-cron-scheduler": "^3.0",
+		"hybridauth/hybridauth": "^3.3",
+		"codeigniter4/codeigniter4-standard": "^1.0",
+		"fzaninotto/faker": "^1.9@dev",
+		"mikey179/vfsstream": "1.6.*",
+		"phpunit/phpunit": "^8.5",
+		"squizlabs/php_codesniffer": "^3.3",
+		"tholu/php-packer": "^0.2.0",
+		"guzzlehttp/guzzle": "^7.0",
+		"pgrimaud/instagram-user-feed": "^6.7.2",
+		"dragonmantank/cron-expression": "v3.1.0",
+		"league/flysystem-aws-s3-v3": "^2.1.0",
+		"pda/pheanstalk": "v4.0.3",
+		"paquettg/php-html-parser": "3.1.1"
+	},
+	"require-dev": {},
+	"autoload": {
+		"psr-4": {
+			"CodeIgniter\\": "system/"
+		}
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"@composer dump-autoload",
+			"CodeIgniter\\ComposerScripts::postUpdate"
+		],
+		"test": "phpunit"
+	},
+	"support": {
+		"forum": "http://forum.codeigniter.com/",
+		"source": "https://github.com/codeigniter4/CodeIgniter4",
+		"slack": "https://codeigniterchat.slack.com"
+	}
+}

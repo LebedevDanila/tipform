@@ -1,0 +1,67 @@
+$path: '/static/fonts/Roboto/';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$path}Roboto-Thin.eot');
+    src:
+            url('#{$path}Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}Roboto-Thin.woff') format('woff'),
+            url('#{$path}Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$path}Roboto-Light.eot');
+    src:
+            url('#{$path}Roboto-Light.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}Roboto-Light.woff') format('woff'),
+            url('#{$path}Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$path}Roboto-Regular.eot');
+    src:
+            url('#{$path}Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}Roboto-Regular.woff') format('woff'),
+            url('#{$path}Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$path}Roboto-Medium.eot');
+    src:
+            url('#{$path}Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}Roboto-Medium.woff') format('woff'),
+            url('#{$path}Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$path}Roboto-Bold.eot');
+    src:
+            url('#{$path}Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}Roboto-Bold.woff') format('woff'),
+            url('#{$path}Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$path}Roboto-Black.eot');
+    src:
+            url('#{$path}Roboto-Black.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}Roboto-Black.woff') format('woff'),
+            url('#{$path}Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

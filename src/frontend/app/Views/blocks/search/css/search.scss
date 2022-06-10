@@ -1,0 +1,41 @@
+$img_this: '/static/img/blocks/search/';
+
+.search {
+    position: relative;
+
+    input {
+        width: 100%;
+        height: 82px;
+        padding: 0 40px 0 30px;
+        z-index: 1;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 35px rgba(241, 97, 66, 0.22);
+        border-radius: 3px;
+
+        &:focus {
+            box-shadow: 0 3px 35px rgba(47, 82, 255, 0.73);
+        }
+
+        &::placeholder {
+            color: #4e4e4e;
+        }
+    }
+
+    button {
+        width: 62px;
+        height: 62px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: #0195F5;
+        z-index: 2;
+        border-radius: 3px;
+        border: none;
+        transition: 0.4s all ease;
+        cursor: pointer;
+
+        &:hover {
+            background: #2f52ff;
+        }
+    }
+}

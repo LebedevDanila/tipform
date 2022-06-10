@@ -1,0 +1,12 @@
+$img_this: '/static/img/blocks/logo/';
+
+.logo {
+    &__title {
+        font-size: 28px;
+        color: #fff;
+
+        span {
+            font-weight: 800;
+        }
+    }
+}

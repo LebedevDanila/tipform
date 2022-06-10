@@ -1,0 +1,20 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_HOST: tcp://docker-dind:2375
+
+stages:
+  - deploy-prod
+
+# Сборка Прода
+deploy-prod:
+  stage: deploy-prod
+  environment:
+    name: pobeda/production
+    url: https://${KUBE_INGRESS_BASE_DOMAIN}
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "master"'
+  script: chmod 777 -R hack && ./hack/gitlab-ci/deploy-production.sh

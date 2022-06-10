@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-env
+data:
+  CONFIG_MAP: |
+
+    CI_ENVIRONMENT = development
+    CI_DEBUG       = false
+
+
+    # Переменные из файла App.php
+    app.env        = 'dev'
+    app.baseURL    = 'http://newproject.rave.dev'
+    app.forceGlobalSecureRequests = false
+    app.sessionDriver = 'CodeIgniter\Session\Handlers\DatabaseHandler'
+    app.sessionCookieName = 'nkrt'
+    app.sessionExpiration = 7200
+    app.sessionSavePath   = 'ci_sessions'
+    app.sessionMatchIP = false
+    app.sessionTimeToUpdate = 300
+    app.sessionRegenerateDestroy = false
+
+    # База данных
+    database.default.hostname = mysql
+    database.default.database = sample
+    database.default.username = root
+    database.default.password = root_password
+    database.default.DBDriver = MySQLi
+
+    # Логины пароли разных сервисов
+    services.smsc.login    = 'perezvoni'
+    services.smsc.password = 'password'
+
+
+    # ID гугл аналитики и метрики
+    analytics.google_analytics_id = 'nNE9eC48DPh8OKYmRO6UZkluAxnQ0Hig5d38RlDUqOg'
+    analytics.yandex_metrika_id   = 84117223
+
+    # Переменная для шифрования JS данных
+    protection.name = 'Sitename'

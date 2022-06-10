@@ -1,0 +1,46 @@
+$img_this: '/static/img/blocks/breadcrumbs/';
+
+.breadcrumbs{
+  display: block;
+  font-size: 14px;
+  padding-bottom: 2px;
+  white-space: nowrap;
+  overflow: auto;
+  li{
+    display: inline-block;
+    line-height: 17px;
+
+    a {
+      span {
+        border-bottom: 1px solid rgba(59, 129, 233, 0.15);
+        color: #3B81E9;
+      }
+    }
+  }
+  .__a{
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid transparent;
+  }
+  .__this{
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    cursor: default;
+
+    span {
+      color: #828282;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    &:hover{
+      border: 0;
+      color: #828282;
+    }
+  }
+  .__gt{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 8px;
+    color: #828282;
+  }
+}

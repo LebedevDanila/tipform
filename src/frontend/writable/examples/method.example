@@ -1,0 +1,22 @@
+<?php namespace App\Api\{{BLOCK}}\{{METHOD}};
+
+use \App\Api\Output;
+
+class V{{VERSION}}
+{
+    public function __construct()
+    {
+        $errors = [
+            //    20 => 'Object doesn\'t exist'
+        ];
+        $this->output = new Output($errors);
+    }
+
+    /**
+     * Код функции
+     */
+    public function execute($params = [])
+    {
+        return $this->output->response($params);
+    }
+}

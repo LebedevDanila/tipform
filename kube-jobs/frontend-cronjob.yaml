@@ -1,0 +1,20 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: frontend-cronjob
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          imagePullSecrets:
+            - name: gitlab-registry
+          containers:
+            - name: server
+              image: frontend
+              envFrom:
+                - configMapRef:
+                    name: frontend-env
+              command: ["sh", "-c", "$(pwd)/kube_cronjob.sh"]
+          restartPolicy: Never

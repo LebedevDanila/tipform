@@ -1,0 +1,15 @@
+$img_this: '/static/img/pages/adminAccounts/';
+
+.adminAccounts {
+    &__add {
+        margin-bottom: 20px;
+    }
+
+    .admin__popupAdd {
+        .admin__popup-content {
+            padding: 20px;
+            width: 400px;
+            height: auto;
+        }
+    }
+}

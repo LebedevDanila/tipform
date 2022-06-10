@@ -1,0 +1,23 @@
+@import "favorites";
+
+
+@media only screen and (max-width : 1110px) {
+    .favorites {
+        padding-bottom: 120px;
+
+        &__title {
+            margin-top: 30px;
+            font-size: 26px;
+        }
+
+        &__content {
+            margin-top: 30px;
+            grid-template-columns: 1fr;
+            row-gap: 12px;
+        }
+
+        &__empty {
+            margin-top: 60px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "feedback";
+
+@media only screen and (max-width : 1110px) {
+	.feedback {
+		margin-top: 72px;
+
+		&__title {
+			margin-top: 30px;
+			line-height: 33px;
+    		font-size: 26px;
+		}
+
+		&__form {
+			margin: 30px auto 0;
+
+			&-wrapper {
+			    padding: 25px 15px 20px;
+			}
+
+			&-content {
+				margin-top: 10px;
+			}
+
+			&-field {
+				&._input {
+					margin-top: 20px;
+					max-width: none;
+				}
+			}
+		}
+	}
+}

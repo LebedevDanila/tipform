@@ -1,0 +1,7 @@
+// Подключаем глобальные настройки и классы
+@import "modules/globalData/global";
+  
+// Подключаем компоненты и страницы 
+@import "modules/includeCss/includeBlocks";
+@import "modules/includeCss/includePages";
+@import "modules/includeCss/includePopups";

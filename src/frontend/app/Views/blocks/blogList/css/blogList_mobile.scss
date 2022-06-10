@@ -1,0 +1,28 @@
+@import "blogList";
+
+
+@media only screen and (max-width : 1110px) {
+    .blogList {
+        &__item {
+            margin-top: 20px;
+            margin-right: 0!important;
+
+            &._full {
+                min-height: 225px;
+            }
+
+            &-image {
+                height: 200px;
+            }
+
+            &-content {
+                padding: 20px;
+            }
+
+            &-views {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+

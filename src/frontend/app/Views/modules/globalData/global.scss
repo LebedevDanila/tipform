@@ -1,0 +1,167 @@
+@import "../fonts/Roboto";
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body, html {
+    line-height: 1;
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+body, input, textarea
+{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
+input, textarea {
+    outline: none;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1210px;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-jcsb {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-jcse {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-aic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-jcc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.disabled{
+    display: none !important;
+}
+
+.ob{
+    opacity: .3;
+    pointer-events: none;
+}
+
+.a {
+    &.__blue {
+        color: #3B81E9;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 100%;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &__item {
+        color: #94A3B8;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        transition: 0.3s all ease;
+        padding: 0 3px 11px 3px;
+        border-bottom: 2px solid #F0F4F9;
+        cursor: pointer;
+        min-width: 160px;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        &:hover {
+            color: #3167F2;
+            border-color: #3167F2;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .container {
+        width: 100%!important;
+    }
+}

@@ -1,0 +1,28 @@
+User-agent: *
+Disallow: /admin
+Disallow: /*?*
+Allow: /*.js
+Allow: /*.css
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+
+User-agent: Yandex
+Disallow: /admin
+Disallow: /*?*
+Allow: /*.js
+Allow: /*.css
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+
+User-agent: Googlebot
+Disallow: /admin
+Disallow: /*?*
+Allow: /*.js
+Allow: /*.css
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+
+Sitemap: https://instaprofi.ru/sitemap.xml

@@ -1,0 +1,16 @@
+$img_this: '/static/img/blocks/ads/';
+
+.ads {
+    &__notify {
+        opacity: 1;
+        background: #2f52ff;
+        padding: 5px 10px;
+        border-radius: 3px;
+        text-align: center;
+        width: fit-content;
+        color: #fff;
+        margin: 0 auto;
+        font-size: 17px;
+        font-weight: 600;
+    }
+}

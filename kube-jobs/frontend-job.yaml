@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: frontend-job
+spec:
+  ttlSecondsAfterFinished: 10
+  template:
+    spec:
+      containers:
+        - name: server
+          image: frontend
+          envFrom:
+            - configMapRef:
+                name: frontend-env
+          command: ["sh", "-c", "$(pwd)/kube_job.sh"]
+      restartPolicy: Never
+      imagePullSecrets:
+        - name: gitlab-registry

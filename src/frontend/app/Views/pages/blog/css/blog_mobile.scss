@@ -1,0 +1,23 @@
+@import "blog";
+
+@media only screen and (max-width : 1110px) {
+	.blog {
+		background: #fff;
+
+		&__title {
+			margin-top: 30px;
+			font-size: 26px;
+		}
+
+		&__categories {
+			margin-top: 28px;
+
+			&-item {
+				font-size: 12px;
+				padding: 0 0 12px 0;
+				width: 25%;
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+//=require ../librariesJs/jquery-3.4.1.min.js
+//=require ../../blocks/jqueryUi/js/jqueryUi.js
+//=require ../librariesJs/pjax.js
+//=require ../../main.js

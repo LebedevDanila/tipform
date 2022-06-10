@@ -1,0 +1,100 @@
+# Copyright 2020 Dominfo.ru
+# Author: Merinov Evgeniy
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  annotations:
+    app.gitlab.com/app: $CI_PROJECT_PATH_SLUG
+    app.gitlab.com/env: $CI_ENVIRONMENT_SLUG
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+      annotations: 
+        sidecar.istio.io/rewriteAppHTTPProbers: "true"
+        app.gitlab.com/app: $CI_PROJECT_PATH_SLUG
+        app.gitlab.com/env: $CI_ENVIRONMENT_SLUG
+    spec:
+      containers:
+        - name: server
+          image: frontend
+          resources:
+            limits:
+              cpu: "0.75"
+              memory: 512Mi
+            requests:
+              cpu: "0.2"
+              memory: 128Mi
+          envFrom:
+          - configMapRef:
+              name: frontend-env
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            exec:
+              command: ["/bin/sh", "-c", "$(pwd)/kube_deploy.sh"]
+            initialDelaySeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /healthcheck/check
+              port: 8080
+            initialDelaySeconds: 10
+            failureThreshold: 2
+            periodSeconds: 10
+      imagePullSecrets:
+        - name: gitlab-registry
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  type: ClusterIP
+  selector:
+    app: frontend
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-queue
+  annotations:
+    app.gitlab.com/app: $CI_PROJECT_PATH_SLUG
+    app.gitlab.com/env: $CI_ENVIRONMENT_SLUG
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-queue
+  template:
+    metadata:
+      labels:
+        app: frontend-queue
+      annotations:
+        sidecar.istio.io/rewriteAppHTTPProbers: "true"
+        app.gitlab.com/app: $CI_PROJECT_PATH_SLUG
+        app.gitlab.com/env: $CI_ENVIRONMENT_SLUG
+    spec:
+      containers:
+        - name: server
+          image: frontend
+          envFrom:
+            - configMapRef:
+                name: frontend-env
+          readinessProbe:
+            exec:
+              command: ["/bin/sh", "-c", "$(pwd)/kube_deploy_queue.sh"]
+            initialDelaySeconds: 5
+      imagePullSecrets:
+        - name: gitlab-registry

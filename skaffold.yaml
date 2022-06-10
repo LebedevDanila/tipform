@@ -1,0 +1,26 @@
+apiVersion: skaffold/v1beta15
+kind: Config
+build:
+  artifacts:
+  - image: frontend
+    context: src/frontend
+    sync:
+      infer:
+        - '**/*.php'
+        - '**/*.js'
+        - '**/*.css'
+        - '**/*.png'
+        - '**/*.scss'
+        - '**/*.jpg'
+        - '**/*.svg'
+        - '**/*.txt'
+        - '**/*.sql'
+        - '**/*.conf'
+        - '.env'
+  tagPolicy:
+    gitCommit: {}
+deploy:
+  kubectl:
+    manifests:
+      - ./kube-jobs/**.yaml
+      - ./kube-manifests/**.yaml
