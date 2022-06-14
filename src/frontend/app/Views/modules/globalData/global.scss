@@ -54,7 +54,7 @@ li {
 }
 
 .container {
-    max-width: 1210px;
+    max-width: 1140px;
     padding-left: 20px!important;
     padding-right: 20px!important;
     margin: 0 auto;
@@ -122,6 +122,13 @@ li {
     }
 }
 
+.big-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #0F1629;
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -156,6 +163,41 @@ li {
         &:hover {
             color: #3167F2;
             border-color: #3167F2;
+        }
+    }
+}
+
+.form {
+
+    &__label {
+        line-height: 20px;
+        color: #94A3B8;
+    }
+
+    &__input {
+        border: 2px solid #CBD5E1;
+        border-radius: 7px;
+
+        color: #64748B;
+
+        &:focus {
+            border: 2px solid #4D5FFF;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__btn {
+        background: #4D5FFF;
+
+        &:hover {
+            background: #f2716c;
+        }
+
+        span {
+            color: #fff;
+            font-weight: bold;
+            margin-left: 10px;
+            line-height: 23px;
         }
     }
 }
