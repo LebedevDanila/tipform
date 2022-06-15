@@ -750,6 +750,156 @@ $img_this: '/static/img/pages/main/';
             margin-top: 61px;
         }
     }
+
+    &__reviews {
+        background: #F5F7F9;
+        padding-top: 72px;
+        padding-bottom: 74px;
+
+        &-desc {
+            font-size: 18px;
+            line-height: 32px;
+            color: #64748B;
+            margin-top: 24px;
+        }
+
+        &-content {
+            margin-top: 45px;
+        }
+
+        &-item {
+            padding: 30px 40px 42px 40px;
+            background: #fff;
+            border-radius: 7px;
+            width: 100%;
+            max-width: 350px;
+
+            &-top {
+                padding-bottom: 20px;
+            }
+
+            &-info {
+                margin-left: 18px;
+                max-width: 192px;
+            }
+
+            &-name {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: #0F1629;
+            }
+
+            &-eval {
+                margin-top: 6px;
+
+                &-stars {
+                    img {
+                        &:not(:last-child) {
+                            margin-right: 2px;
+                        }
+                    }
+                }
+
+                &-date {
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #64748B;
+                    padding-left: 12px;
+                    margin-left: 12px;
+                    border-left: 1px solid #E0E7EF;
+                }
+            }
+
+            &-company {
+                border-top: 1px solid #E0E7EF;
+                border-bottom: 1px solid #E0E7EF;
+                padding-top: 20px;
+                padding-bottom: 18px;
+
+                &-name {
+                    font-weight: 500;
+                    line-height: 22px;
+                    color: #3167F2;
+                    max-width: 220px;
+                    margin-left: 14px;
+                }
+            }
+
+            &-text {
+                margin-top: 20px;
+                position: relative;
+
+                span {
+                    line-height: 26px;
+                    color: #64748B;
+                    position: relative;
+                }
+
+                &:before {
+                    content: '';
+                    background-image: url('#{$img_this}quote.svg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 48px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    &__faq {
+        background: #fff;
+        padding-top: 52px;
+        padding-bottom: 70px;
+
+        &-info {
+            width: 100%;
+            max-width: 367px;
+        }
+
+        &-desc {
+            font-size: 18px;
+            line-height: 32px;
+            color: #64748B;
+            margin-top: 24px;
+        }
+
+        &-content {
+            width: 100%;
+            max-width: 693px;
+        }
+
+        &-item {
+            padding: 30px;
+            border: 1px solid #E0E7EF;
+            border-radius: 7px;
+            width: 100%;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+
+            &-title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #0F1629;
+                max-width: calc(100% - 20px);
+            }
+
+            &-content {
+                margin-top: 24px;
+                line-height: 26px;
+                color: #64748B;
+                max-width: 580px;
+            }
+        }
+    }
 }
 
 @keyframes radial-pulse {

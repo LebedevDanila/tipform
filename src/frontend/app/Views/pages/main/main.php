@@ -392,4 +392,128 @@
             <img class="main__integration-image" src="/static/img/pages/main/integration.png" alt="integration">
         </div>
     </div>
+    <div class="main__reviews">
+        <div class="main__reviews-container container">
+            <div class="main__reviews-title big-title">Вот что люди говорят о нас</div>
+            <div class="main__reviews-desc">97% клиентов довольны круглосуточной техподдержкой</div>
+            <div class="main__reviews-content flex-jcsb">
+                <div class="main__reviews-item">
+                    <div class="main__reviews-item-top flex-aic">
+                        <div class="main__reviews-item-avatar">
+                            <img src="/static/img/pages/main/reviews_avatar.png" alt="reviews_avatar">
+                        </div>
+                        <div class="main__reviews-item-info">
+                            <div class="main__reviews-item-name">Вадим Клемцов</div>
+                            <div class="main__reviews-item-eval flex-aic">
+                                <div class="main__reviews-item-eval-stars flex-aic">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-gray.svg" alt="star-gray">
+                                </div>
+                                <div class="main__reviews-item-eval-date">01.06.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__reviews-item-company flex-aic">
+                        <div class="main__reviews-item-company-img">
+                            <img src="/static/img/pages/main/reviews_company.png" alt="reviews_company">
+                        </div>
+                        <div class="main__reviews-item-company-name">Основатель Сети Ломбардов «Корона»</div>
+                    </div>
+                    <div class="main__reviews-item-text">
+                        <span>Использую данный сервис по основному месту работы и в своих консалтинговых проектах. Как специалист по данным и цифровому развитию считаю необходимым внедрять данный сервис во все учетные системы, где происходит работа с данными клиентов. Уже реализованы интеграции с 1С, Excel и пр. как в режиме подсказок...</span>
+                    </div>
+                </div>
+                <div class="main__reviews-item">
+                    <div class="main__reviews-item-top flex-aic">
+                        <div class="main__reviews-item-avatar">
+                            <img src="/static/img/pages/main/reviews_avatar.png" alt="reviews_avatar">
+                        </div>
+                        <div class="main__reviews-item-info">
+                            <div class="main__reviews-item-name">Вадим Клемцов</div>
+                            <div class="main__reviews-item-eval flex-aic">
+                                <div class="main__reviews-item-eval-stars flex-aic">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-gray.svg" alt="star-gray">
+                                </div>
+                                <div class="main__reviews-item-eval-date">01.06.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__reviews-item-company flex-aic">
+                        <div class="main__reviews-item-company-img">
+                            <img src="/static/img/pages/main/reviews_company.png" alt="reviews_company">
+                        </div>
+                        <div class="main__reviews-item-company-name">Основатель Сети Ломбардов «Корона»</div>
+                    </div>
+                    <div class="main__reviews-item-text">
+                        <span>Использую данный сервис по основному месту работы и в своих консалтинговых проектах. Как специалист по данным и цифровому развитию считаю необходимым внедрять данный сервис во все учетные системы, где происходит работа с данными клиентов. Уже реализованы интеграции с 1С, Excel и пр. как в режиме подсказок...</span>
+                    </div>
+                </div>
+                <div class="main__reviews-item">
+                    <div class="main__reviews-item-top flex-aic">
+                        <div class="main__reviews-item-avatar">
+                            <img src="/static/img/pages/main/reviews_avatar.png" alt="reviews_avatar">
+                        </div>
+                        <div class="main__reviews-item-info">
+                            <div class="main__reviews-item-name">Вадим Клемцов</div>
+                            <div class="main__reviews-item-eval flex-aic">
+                                <div class="main__reviews-item-eval-stars flex-aic">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-yellow.svg" alt="star-yellow">
+                                    <img src="/static/img/pages/main/star-gray.svg" alt="star-gray">
+                                </div>
+                                <div class="main__reviews-item-eval-date">01.06.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__reviews-item-company flex-aic">
+                        <div class="main__reviews-item-company-img">
+                            <img src="/static/img/pages/main/reviews_company.png" alt="reviews_company">
+                        </div>
+                        <div class="main__reviews-item-company-name">Основатель Сети Ломбардов «Корона»</div>
+                    </div>
+                    <div class="main__reviews-item-text">
+                        <span>Использую данный сервис по основному месту работы и в своих консалтинговых проектах. Как специалист по данным и цифровому развитию считаю необходимым внедрять данный сервис во все учетные системы, где происходит работа с данными клиентов. Уже реализованы интеграции с 1С, Excel и пр. как в режиме подсказок...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__faq">
+        <div class="main__faq-container container flex-jcsb">
+            <div class="main__faq-info">
+                <div class="main__faq-title big-title">Часто задаваемые вопросы</div>
+                <div class="main__faq-desc">Узнайте больше о TipForme и о работе с нашей платформой без кода</div>
+            </div>
+            <div class="main__faq-content">
+                <div class="main__faq-item">
+                    <div class="main__faq-item-top flex-aic flex-jcsb">
+                        <div class="main__faq-item-title">Что такое структурированный (гранулированный) адрес?</div>
+                        <div class="main__faq-item-icon">
+                            <img src="/static/img/pages/main/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                </div>
+                <div class="main__faq-item">
+                    <div class="main__faq-item-top flex-aic flex-jcsb">
+                        <div class="main__faq-item-title">Что такое структурированный (гранулированный) адрес?</div>
+                        <div class="main__faq-item-icon">
+                            <img src="/static/img/pages/main/minus.svg" alt="minus">
+                        </div>
+                    </div>
+                    <div class="main__faq-item-content">
+                        Количество запросов в сутки зависит от посещаемости Вашего сайта или сервиса, в котором подключена возможность поиска адреса. Например, если в сутки Ваш сайт посещает 50 человек и делает по две попытки поиска адреса, Вам подойдет тариф «Старт».
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>

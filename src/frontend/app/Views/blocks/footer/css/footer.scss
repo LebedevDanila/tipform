@@ -1,1 +1,97 @@
 $img_this: '/static/img/blocks/footer/';
+
+.footer {
+	&__top {
+		background: #303439;
+		padding-top: 50px;
+		padding-bottom: 72px;
+	}
+
+	&__logo {
+		width: 150px;
+		height: 35px;
+		background: #fff;
+	}
+
+	&__desc {
+		margin-top: 27px;
+		max-width: 155px;
+		font-size: 18px;
+		line-height: 26px;
+		color: #E0E7EF;
+	}
+
+	&__nav {
+		&-title {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #FFFFFF;
+			margin-bottom: 24px;
+		}
+
+		&-list {
+			li {
+				a {
+					line-height: 32px;
+					color: #E0E7EF;
+				}
+			}
+		}
+
+		&-phone {
+			font-size: 24px;
+			line-height: 24px;
+			font-weight: bold;
+			color: #E0E7EF;
+			display: block;
+		}
+
+		&-worktime {
+			margin-top: 3px;
+			font-size: 14px;
+			line-height: 18px;
+			color: #E0E7EF;
+		}
+
+		&-email {
+			display: block;
+			margin-top: 24px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			text-decoration: underline;
+			color: #FFFFFF;
+		}
+
+		&-social {
+			margin-top: 24px;
+
+			a {
+				&:not(:last-child) {
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+
+	&__bottom {
+		background: #2C3137;
+		padding: 19px 0;
+	}
+
+	&__copyright {
+		font-size: 14px;
+		line-height: 22px;
+		color: #E0E7EF;
+	}
+
+	&__ssl {
+		span {
+			margin-left: 12px;
+			font-size: 14px;
+			line-height: 18px;
+			color: #E0E7EF;
+		}
+	}
+}
