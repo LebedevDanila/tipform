@@ -17,7 +17,7 @@ class Curl
         }
     }
 
-    public function send($url = '', $post = [], $headers = [], $cookie = '', $proxy = '') // 37.48.118.4:13150
+    public function send($url = '', $post = [], $headers = [], $cookie = '', $proxy = '')
     {
         $is_user_agent = 0;
         foreach ($headers as $row) {

@@ -2,6 +2,7 @@
 namespace App\Libraries;
 
 use App\Libraries\Utils\Curl;
+use PHPHtmlParser\Dom;
 
 class Parser
 {
@@ -10,6 +11,7 @@ class Parser
         2 => 'Не валидный url.',
         3 => 'Ошибка парсинга.',
     ];
+    private $news_count = 15;
 
     public function run($url = '')
     {
@@ -23,11 +25,29 @@ class Parser
 
         /* Получение новостей */
         try {
-            $response = (new Curl())->send($url);
+            $html = (new Curl())->send($url);
         } catch (\Exception $e) {
             return $this->error(3);
         }
-        echo $response;
+
+        $dom = (new Dom)->loadStr($html);
+
+        $links = $dom->find('.js-news-feed-list a');
+        $news  = [];
+        foreach ($links as $key => $link) {
+            if ($key === $this->news_count) {
+                break;
+            }
+
+            $title = $link->find('.news-feed__item__title');
+            $news[] = [
+                'href'  => $link->getAttribute('href'),
+                'title' => $title,
+            ];
+        }
+
+        echo json_encode($news);
+        die();
         die();
     }
 
