@@ -160,7 +160,7 @@ li {
             margin-right: 24px;
         }
 
-        &:hover {
+        &:hover, &._active {
             color: #3167F2;
             border-color: #3167F2;
         }
@@ -205,5 +205,10 @@ li {
 @media (max-width: 1100px){
     .container {
         width: 100%!important;
+    }
+
+    .big-title {
+        font-size: 28px;
+        line-height: 34px;
     }
 }

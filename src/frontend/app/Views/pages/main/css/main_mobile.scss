@@ -1,4 +1,383 @@
 @import "main";
 
 @media only screen and (max-width : 1110px) {
+    .main {
+
+        &__major {
+            padding-top: 110px;
+            padding-bottom: 82px;
+
+            &-title {
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            &-desc {
+                font-size: 16px;
+                line-height: 22px;
+                margin-top: 18px;
+            }
+
+            &-btn {
+                max-width: none;
+                margin-top: 24px;
+            }
+
+            &-bottom {
+                margin-top: 32px;
+            }
+
+            &-numbers {
+                margin-right: 0;
+
+                &._longMargin {
+                    margin-right: 0;
+                    margin-bottom: 6px;
+                }
+
+                &:last-child {
+                    margin-top: 6px;
+                }
+
+                &-count {
+                    width: 115px;
+                    font-size: 38px;
+                    line-height: 42px;
+                }
+            }
+
+            &-video {
+                display: none;
+            }
+        }
+
+        &__search {
+            margin-top: -53px;
+            padding: 24px 20px;
+
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            &-instruction {
+                display: none;
+            }
+
+            &-tabs {
+                margin-top: 24px;
+
+                .tabs__item {
+                    min-width: auto;
+                    width: 50%;
+                }
+            }
+
+            &-form {
+                margin-top: 32px;
+
+                &-content {
+                    margin-top: 8px;
+                }
+
+
+                &-input {
+                    width: 100%;
+                    padding-left: 17px;
+                }
+
+                &-submit {
+                    max-width: none;
+                    margin-top: 14px;
+                }
+
+                &-example {
+                    display: none;
+                }
+            }
+
+            &-data {
+                margin-top: 32px;
+                padding-bottom: 32px;
+
+                &-form {
+                    &-field {
+                        &:not(:first-child) {
+                            margin-top: 16px;
+                        }
+
+                        &-input {
+                            min-width: auto;
+                        }
+
+                        &-desc {
+                            margin-top: 4px;
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+
+                &-info {
+                    margin-top: 52px;
+
+                    &-content {
+                        margin-top: 24px;
+                    }
+
+                    &-field {
+                        flex-wrap: wrap;
+                        margin-top: 16px;
+
+                        &-label {
+                            width: 100%;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+
+                        &-text {
+                            width: 100%;
+                            margin-top: 6px;
+                            word-break: break-word;
+
+                            span {
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            &-bottom {
+                padding-top: 24px;
+
+                &-btn {
+                    font-size: 14px;
+                }
+
+                &-desc {
+                    margin-top: 9px;
+                    margin-left: 0;
+                    font-size: 13px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+
+        &__about {
+            margin-top: 64px;
+
+            &-desc {
+                font-size: 16px;
+                line-height: 26px;
+                margin-top: 24px;
+            }
+
+            &-form {
+                margin-top: 42px;
+
+                &-label {
+                    font-size: 12px;
+                    margin-bottom: 6.6px;
+                    line-height: 14px;
+                }
+
+                &-input {
+                    width: 72%;
+
+                    &:before {
+                        left: 9px;
+                        top: 7px;
+                    }
+
+                    input {
+                        height: 34px;
+                        font-size: 12px;
+                        padding-left: 32px;
+                    }
+                }
+
+                &-submit {
+                    max-width: 81px;
+                    height: 34px;
+
+                    img {
+                        width: 15px;
+                    }
+
+                    span {
+                        margin-left: 5px;
+                        font-size: 11px;
+                    }
+                }
+
+                &-hint {
+                    &-item {
+                        padding: 8px 12px;
+
+                        &-title {
+                            font-size: 10px;
+                        }
+
+                        img {
+                            width: 14px;
+                            height: 14px;
+                        }
+
+                        span {
+                            font-size: 11px;
+                            line-height: 15px;
+                            margin-left: 7px;
+                        }
+                    }
+                }
+
+                &-map {
+                    display: none;
+                }
+            }
+        }
+
+        &__benefits {
+            margin-top: 62px;
+            padding-bottom: 52px;
+
+            &-item {
+                &:not(:first-child) {
+                    margin-top: 24px;
+                }
+
+                &-image {
+                    margin: 0 auto;
+                }
+
+                &-title {
+                    margin-top: 10px;
+                    text-align: center;
+                }
+
+                &-desc {
+                    text-align: center;
+                    margin-top: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__advantages {
+            padding-top: 52px;
+
+            &-item {
+                margin-top: 20px;
+
+                &-content {
+                    padding: 24px;
+                }
+            }
+        }
+
+        &__tariffs {
+            padding-top: 52px;
+
+            &-item {
+                width: 100%;
+                border: 1px solid #e0e7ef!important;
+                border-radius: 7px!important;
+
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+
+                &._business, &._free {
+                    &:before {
+                        border-radius: 7px 7px 0 0;
+                    }
+                }
+
+                &-bottom {
+                    margin-top: 15px;
+                }
+            }
+
+            &-help {
+                &-text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__integration {
+            padding-top: 52px;
+            padding-bottom: 70px;
+
+            &-content {
+                margin-top: 18px;
+            }
+
+            &-desc {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &-right {
+                margin-top: 24px;
+            }
+
+            &-btn {
+                max-width: none;
+            }
+
+            &-info {
+                text-align: center;
+                margin-top: 12px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &__reviews {
+            padding: 52px 0;
+
+            &-desc {
+                line-height: 24px;
+            }
+
+            &-content {
+                margin-top: 24px;
+            }
+
+            &-item {
+                padding: 30px 24px;
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &__faq {
+            padding: 70px 0;
+
+            &-content {
+                margin-top: 24px;
+            }
+
+            &-item {
+                padding: 24px;
+
+                &-title {
+                    max-width: calc(100% - 50px);
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                &-content {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
 }

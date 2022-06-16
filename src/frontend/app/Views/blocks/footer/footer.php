@@ -45,7 +45,7 @@
 			<div class="footer__copyright">© 2022. Все права защищены.</div>
 			<img class="footer__paymethods" src="/static/img/blocks/footer/paymethods.svg" alt="paymethods">
 			<div class="footer__ssl flex-aic">
-				<img class="footer__paymethods" src="/static/img/blocks/footer/ssl.svg" alt="ssl">
+				<img src="/static/img/blocks/footer/ssl.svg" alt="ssl">
 				<span>SSL Certificate by Comodo</span>
 			</div>
 		</div>

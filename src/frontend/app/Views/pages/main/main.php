@@ -40,13 +40,13 @@
                     </div>
                 </div>
                 <div class="main__search-tabs tabs">
-                    <div class="tabs__item">Адрес</div>
+                    <div class="tabs__item _active">Адрес</div>
                     <div class="tabs__item">Адрес по полям</div>
                 </div>
                 <div class="main__search-form">
                     <div class="main__search-form-minititle">Город, улица, дом, квартира</div>
                     <div class="main__search-form-content flex-aic flex-jcsb">
-                        <input class="main__search-form-input form__input" type="text" placeholder="Введите адрес в свободной форме">
+                        <input class="main__search-form-input form__input" type="text" placeholder="<?=$useragent->isMobile() ? 'Введите адрес' : 'Введите адрес в свободной форме'?>">
                         <div class="main__search-form-submit form__btn btn">
                             <img src="/static/img/pages/main/search.svg" alt="search">
                             <span>Поиск</span>

@@ -1,4 +1,25 @@
 @import "header";
 
 @media only screen and (max-width : 1110px) {
+    .header {
+        padding: 17px 0;
+
+        &__button {
+            display: block;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__auth {
+            display: none;
+            width: 100%;
+
+            &-wrapper {
+                justify-content: center;
+                margin-top: 25px;
+            }
+        }
+    }
 }

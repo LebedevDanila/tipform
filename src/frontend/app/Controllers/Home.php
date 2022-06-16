@@ -3,11 +3,15 @@
 namespace App\Controllers;
 
 use \App\Libraries\Api;
+use App\Libraries\Parser;
 
 class Home extends BaseController {
 
 	public function index()
 	{
+        $data = (new Parser())->run('https://chr.rbc.ru/');
+        echo json_encode($data);
+        die();
 		$this->data['content']             = 'main';
 		$this->data['meta']['title']       = 'Главная';
 		$this->data['meta']['description'] = '';

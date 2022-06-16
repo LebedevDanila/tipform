@@ -20,10 +20,6 @@ $img_this: '/static/img/pages/main/';
             z-index: 1;
         }
 
-        &-container {
-            max-width: 1180px;
-        }
-
         &-content {
             max-width: 530px;
             position: relative;
@@ -114,7 +110,6 @@ $img_this: '/static/img/pages/main/';
             }
 
             &-text {
-                font-size: 16px;
                 line-height: 22px;
                 font-weight: 500;
                 color: #F0F4F9;
@@ -422,7 +417,6 @@ $img_this: '/static/img/pages/main/';
 
                     span {
                         margin-left: 10px;
-                        font-size: 16px;
                         line-height: 22px;
                         color: #001A33;
                         b {
@@ -464,7 +458,6 @@ $img_this: '/static/img/pages/main/';
             }
             &-desc {
                 margin-top: 14px;
-                font-size: 16px;
                 line-height: 24px;
                 color: #64748B;
             }
@@ -472,7 +465,7 @@ $img_this: '/static/img/pages/main/';
     }
 
     &__advantages {
-        padding: 72px;
+        padding-top: 62px;
 
         &-content {
             margin-top: 32px;
@@ -489,6 +482,7 @@ $img_this: '/static/img/pages/main/';
             }
 
             &-image {
+                width: 100%;
                 display: block;
             }
 
@@ -502,7 +496,6 @@ $img_this: '/static/img/pages/main/';
             &-desc {
                 margin-top: 12px;
                 font-weight: 400;
-                font-size: 16px;
                 line-height: 24px;
                 color: #64748B;
                 min-height: 96px;
@@ -511,6 +504,7 @@ $img_this: '/static/img/pages/main/';
     }
 
     &__tariffs {
+        padding-top: 72px;
 
         &-content {
             margin-top: 32px;
@@ -610,7 +604,6 @@ $img_this: '/static/img/pages/main/';
                 }
 
                 &-time {
-                    font-size: 16px;
                     line-height: 16px;
                     color: #64748B;
                 }
@@ -655,7 +648,6 @@ $img_this: '/static/img/pages/main/';
                 background: #FFFFFF;
                 border: 1px solid #CBD5E1;
                 font-weight: bold;
-                font-size: 16px;
                 line-height: 20px;
                 color: #64748B;
 
@@ -739,7 +731,6 @@ $img_this: '/static/img/pages/main/';
         }
 
         &-info {
-            font-size: 16px;
             line-height: 26px;
             text-align: right;
             color: #64748B;
@@ -748,6 +739,7 @@ $img_this: '/static/img/pages/main/';
 
         &-image {
             margin-top: 61px;
+            width: 100%;
         }
     }
 
