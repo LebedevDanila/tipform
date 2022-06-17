@@ -16,7 +16,7 @@
             </div>
         </div>
         <ul class="header__nav flex-aic">
-            <li><a href="#">Главная</a></li>
+            <li><a class="_active" href="#">Главная</a></li>
             <li><a href="#">Тарифы</a></li>
             <li><a href="#">API</a></li>
             <li><a href="#">FAQ</a></li>

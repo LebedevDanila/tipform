@@ -80,8 +80,8 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 
 defined('PHONE_NUMBER') || define('PHONE_NUMBER', '+7 (499) 460-55-63');
 
-defined('FRONTEND_VERSION_CSS') || define('FRONTEND_VERSION_CSS', '5d1c63109bc94400e0afee7844f42554');
-defined('FRONTEND_VERSION_JS')  || define('FRONTEND_VERSION_JS', 'de77032e702e71c2928865c95a4c3e13');
+defined('FRONTEND_VERSION_CSS') || define('FRONTEND_VERSION_CSS', '01bb30ea0449c24f78001ff5f70a0a46');
+defined('FRONTEND_VERSION_JS')  || define('FRONTEND_VERSION_JS', '689a0492f82fe6d330e06033f53ac0f5');
 
 
 defined('SALTPASSWORD')        || define('SALTPASSWORD', 'Gsn7Wa7B5k2wzxyK#');
